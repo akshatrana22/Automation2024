@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="43.886" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="webdriver.chrome.driver" value="/Users/akshatrana/Downloads/chromedriver-mac-arm64/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/test-classes:/Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/classes:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-java/4.26.0/selenium-java-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-api/4.26.0/selenium-api-4.26.0.jar:/Users/akshatrana/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.26.0/selenium-chrome-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.26.0/selenium-chromium-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-json/4.26.0/selenium-json-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.26.0/selenium-manager-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v128/4.26.0/selenium-devtools-v128-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.26.0/selenium-devtools-v129-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.26.0/selenium-devtools-v130-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.26.0/selenium-devtools-v85-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.26.0/selenium-edge-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.26.0/selenium-firefox-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-http/4.26.0/selenium-http-4.26.0.jar:/Users/akshatrana/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.26.0/selenium-ie-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.26.0/selenium-remote-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.jar:/Users/akshatrana/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/akshatrana/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/akshatrana/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/akshatrana/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/akshatrana/.m2/repository/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.jar:/Users/akshatrana/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-api/1.43.0/opentelemetry-api-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-context/1.43.0/opentelemetry-context-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.43.0/opentelemetry-exporter-logging-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.43.0/opentelemetry-sdk-common-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.43.0/opentelemetry-sdk-extension-autoconfigure-spi-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.43.0/opentelemetry-sdk-extension-autoconfigure-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.43.0-alpha/opentelemetry-api-incubator-1.43.0-alpha.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.43.0/opentelemetry-sdk-trace-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.43.0/opentelemetry-sdk-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.43.0/opentelemetry-sdk-metrics-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.43.0/opentelemetry-sdk-logs-1.43.0.jar:/Users/akshatrana/.m2/repository/net/bytebuddy/byte-buddy/1.15.7/byte-buddy-1.15.7.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-os/4.26.0/selenium-os-4.26.0.jar:/Users/akshatrana/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.26.0/selenium-safari-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-support/4.26.0/selenium-support-4.26.0.jar:/Users/akshatrana/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/akshatrana/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/akshatrana/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/akshatrana/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/akshatrana/.m2/repository/commons-io/commons-io/2.18.0/commons-io-2.18.0.jar:/Users/akshatrana/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar:/Users/akshatrana/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/akshatrana/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/akshatrana/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/akshatrana/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/akshatrana/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/akshatrana/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.2/log4j-core-2.24.2.jar:/Users/akshatrana/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.1/log4j-api-2.24.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/surefire/surefirebooter-20241124194638000_3.jar /Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/surefire 2024-11-24T19-46-37_963-jvmRun1 surefire-20241124194638000_1tmp surefire_0-20241124194638000_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/test-classes:/Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/classes:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-java/4.26.0/selenium-java-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-api/4.26.0/selenium-api-4.26.0.jar:/Users/akshatrana/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.26.0/selenium-chrome-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.26.0/selenium-chromium-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-json/4.26.0/selenium-json-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.26.0/selenium-manager-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v128/4.26.0/selenium-devtools-v128-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v129/4.26.0/selenium-devtools-v129-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v130/4.26.0/selenium-devtools-v130-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.26.0/selenium-devtools-v85-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.26.0/selenium-edge-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.26.0/selenium-firefox-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-http/4.26.0/selenium-http-4.26.0.jar:/Users/akshatrana/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.26.0/selenium-ie-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.26.0/selenium-remote-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/com/google/guava/guava/33.3.1-jre/guava-33.3.1-jre.jar:/Users/akshatrana/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/akshatrana/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/akshatrana/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/akshatrana/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/Users/akshatrana/.m2/repository/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.jar:/Users/akshatrana/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-api/1.43.0/opentelemetry-api-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-context/1.43.0/opentelemetry-context-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.43.0/opentelemetry-exporter-logging-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.43.0/opentelemetry-sdk-common-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.43.0/opentelemetry-sdk-extension-autoconfigure-spi-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.43.0/opentelemetry-sdk-extension-autoconfigure-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.43.0-alpha/opentelemetry-api-incubator-1.43.0-alpha.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.43.0/opentelemetry-sdk-trace-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.43.0/opentelemetry-sdk-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.43.0/opentelemetry-sdk-metrics-1.43.0.jar:/Users/akshatrana/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.43.0/opentelemetry-sdk-logs-1.43.0.jar:/Users/akshatrana/.m2/repository/net/bytebuddy/byte-buddy/1.15.7/byte-buddy-1.15.7.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-os/4.26.0/selenium-os-4.26.0.jar:/Users/akshatrana/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.26.0/selenium-safari-driver-4.26.0.jar:/Users/akshatrana/.m2/repository/org/seleniumhq/selenium/selenium-support/4.26.0/selenium-support-4.26.0.jar:/Users/akshatrana/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/akshatrana/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/akshatrana/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/akshatrana/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/akshatrana/.m2/repository/commons-io/commons-io/2.18.0/commons-io-2.18.0.jar:/Users/akshatrana/.m2/repository/com/aventstack/extentreports/5.1.2/extentreports-5.1.2.jar:/Users/akshatrana/.m2/repository/io/reactivex/rxjava3/rxjava/3.1.6/rxjava-3.1.6.jar:/Users/akshatrana/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/Users/akshatrana/.m2/repository/org/freemarker/freemarker/2.3.32/freemarker-2.3.32.jar:/Users/akshatrana/.m2/repository/org/projectlombok/lombok/1.18.26/lombok-1.18.26.jar:/Users/akshatrana/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/akshatrana/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.2/log4j-core-2.24.2.jar:/Users/akshatrana/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.1/log4j-api-2.24.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/akshatrana"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/akshatrana/eclipse-workspace/BrowserStackAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/surefire/surefirebooter-20241124194638000_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.1+11-39"/>
+    <property name="user.name" value="akshatrana"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/akshatrana/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/f1/1vs80fdd4fb06ghvxlf0y5hc0000gn/T/"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="/Users/akshatrana/eclipse-workspace/BrowserStackAutomation"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/akshatrana/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.1+11-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="validateHomePageLinksWorksAsExpected" classname="com.test.BS.smokeTest.HomePageTest" time="6.14">
+    <system-out><![CDATA[...
+... TestNG 7.10.2 by Cédric Beust (cedric@beust.com)
+...
+
+The URL accessed is= https://www.browserstack.com/
+2024-11-24T14:16:53.605596Z main INFO Starting configuration XmlConfiguration[location=/Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/classes/log4j2.xml, lastModified=2024-11-24T14:16:37.335Z]...
+2024-11-24T14:16:53.606608Z main INFO Start watching for changes to /Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/classes/log4j2.xml every 0 seconds
+2024-11-24T14:16:53.606751Z main INFO Configuration XmlConfiguration[location=/Users/akshatrana/eclipse-workspace/BrowserStackAutomation/target/classes/log4j2.xml, lastModified=2024-11-24T14:16:37.335Z] started.
+2024-11-24T14:16:53.608089Z main INFO Stopping configuration org.apache.logging.log4j.core.config.DefaultConfiguration@7139bd31...
+2024-11-24T14:16:53.608493Z main INFO Configuration org.apache.logging.log4j.core.config.DefaultConfiguration@7139bd31 stopped.
+The testcase has started = validateHomePageLinksWorksAsExpected
+Searching for element: By.xpath: //button[@aria-label='Products']
+Found element: By.xpath: //button[@aria-label='Products']
+The text of the webelement is = Products
+Searching for element: By.xpath: //button[@aria-label='Developers']
+Found element: By.xpath: //button[@aria-label='Developers']
+The text of the webelement is = Developers
+Searching for element: By.xpath: //a[@aria-label='Pricing']//span
+Found element: By.xpath: //a[@aria-label='Pricing']//span
+The text of the webelement is = Pricing
+Searching for element: By.xpath: //a[@aria-label='Sign in']//span
+Found element: By.xpath: //a[@aria-label='Sign in']//span
+The text of the webelement is = Sign in
+Searching for element: By.xpath: //a[@aria-label='Free Trial']//span
+Found element: By.xpath: //a[@aria-label='Free Trial']//span
+The text of the webelement is = FREE TRIAL
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Nov 24, 2024 7:46:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="validateHomePageDropdownLinksWorksAsExpected" classname="com.test.BS.smokeTest.HomePageTest" time="2.891">
+    <system-out><![CDATA[The driver has quit now
+The URL accessed is= https://www.browserstack.com/
+The testcase has started = validateHomePageDropdownLinksWorksAsExpected
+19:47:18.860 [main] INFO  com.test.BS.Pages.HomePage - First log
+Searching for element: By.xpath: //button[@aria-label='Products']
+Found element: By.xpath: //button[@aria-label='Products']
+The text of the webelement is = Live
+The text of the webelement is = Bug Capture
+The text of the webelement is = Accessibility Testing
+The text of the webelement is = Automate
+The text of the webelement is = Automate TurboScale
+The text of the webelement is = Accessibility Automation
+The text of the webelement is = Percy
+The text of the webelement is = Low Code Automation
+The text of the webelement is = Test Management
+The text of the webelement is = Test Observability
+Searching for element: By.xpath: //button[@id='products-dd-tab-2']
+Found element: By.xpath: //button[@id='products-dd-tab-2']
+The text of the webelement is = App Live
+The text of the webelement is = App Accessibility Testing
+The text of the webelement is = App Automate
+The text of the webelement is = App Percy
+The text of the webelement is = Test Management
+The text of the webelement is = Test Observability
+]]></system-out>
+    <system-err><![CDATA[Nov 24, 2024 7:47:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+</testsuite>

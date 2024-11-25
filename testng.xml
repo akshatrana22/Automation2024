@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BrowserStackSuite" verbose="3" thread-count="5">
+
+<listeners>
+<listener class-name="com.test.BS.utility.AnnotationTransformer"/>
+<listener class-name="com.test.BS.utility.TestListener"/>
+</listeners>
+
+   <test name="HomePage Test">  
+    <classes>
+      <class name="com.test.BS.smokeTest.HomePageTest">
+      <methods>
+      	<exclude name="validateHeaderFunctionality"></exclude>
+      	<include name="validateHomePageLinksWorksAsExpected"></include>
+      	<include name="validateHomePageDropdownLinksWorksAsExpected"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
