@@ -105,8 +105,4 @@ public class HomePage extends Base{
 	List<String> actualAppStrings = List.of("App Live","App Accessibility Testing","App Automate","App Percy","Test Management","Test Observability");	
 	Assert.assertEquals(expectedAppList, actualAppStrings);
 	}
-	
-	
-	
-	
 }
