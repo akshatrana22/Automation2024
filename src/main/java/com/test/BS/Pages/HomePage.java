@@ -41,6 +41,8 @@ public class HomePage extends Base{
 	List<WebElement> productsAppDropDown;
 	@FindBy(xpath="//div[@id='products-dd-tabpanel-1-inner-1']//descendant::a[contains(@class,'sprite')]//span")
 	List<WebElement> productsDropDownElements;
+	@FindBy(xpath="//a[contains(@class,'bstack-mm-link bstack-mm-dev-link-')]//span[@class='item-text']")
+	List<WebElement> developerDropDown;
 	
 	
 	public HomePage() {
@@ -56,7 +58,7 @@ public class HomePage extends Base{
 		
 	}
 	
-	public String validateHeaderBarLink() throws InterruptedException {
+	public String validateHeaderBarLinkFunctionlity() throws InterruptedException {
 		wait.elementToBeClickable(headerBarLink);
 		log.info("First log");
 		headerBarLink.click();
@@ -77,11 +79,10 @@ public class HomePage extends Base{
 		Assert.assertEquals(freeTrial.getText(),"FREE TRIAL");	
 		}
 	
-	public void validateHomePageLinksDropdown() {
-		log.info("First log");
-
+	public void validateHomePageLinksDropdown(String dropdownName) {
 		int i;
 		action= new Actions(driver);
+		if(dropdownName.equalsIgnoreCase("ProductLink")) {
 		action.moveToElement(productLink).build().perform();
 		//ProductWebList
 		List<String> expectedString= new ArrayList<>();
@@ -105,4 +106,20 @@ public class HomePage extends Base{
 	List<String> actualAppStrings = List.of("App Live","App Accessibility Testing","App Automate","App Percy","Test Management","Test Observability");	
 	Assert.assertEquals(expectedAppList, actualAppStrings);
 	}
-}
+		else if(dropdownName.equalsIgnoreCase("Developers")) {
+			action.moveToElement(developersLink).build().perform();
+			List<String>expected=new ArrayList<>();
+			
+			for(i=0;i<developerDropDown.size();i++) {
+				expected.add(developerDropDown.get(i).getText());
+			}
+			
+			List<String> actual = List.of("Documentation","Support","Status","Release Notes","Open Source","Events","Meetups","Test University Beta","Champions");
+			Assert.assertEquals(expected, actual);
+
+			}
+			
+		}
+		
+		
+	}

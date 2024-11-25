@@ -25,11 +25,11 @@ public class HomePageTest extends Base{
 	
 	@Test(priority=1)
 	public void validateHeaderFunctionality() throws InterruptedException {
-		String expected="Introducing Bug Capture: A new way to report & resolve bugs: 20x faster, 100% less painful. Get free access now";
+		String expected="Introducing Low Code Automation: AI-driven automated testing without coding. Create your first test in under 3 minutes-Try now!";
 		String actual= homepage.validateHeaderbarText();
 		softassert.assertEquals(actual, expected);
-		String Title="Bug Capture | BrowserStack";
-		softassert.assertEquals(Title, homepage.validateHeaderBarLink() );
+		String Title="BrowserStack Low-Code Automation | BrowserStack";
+		softassert.assertEquals(Title, homepage.validateHeaderBarLinkFunctionlity() );
 		softassert.assertAll();
 	}
 	
@@ -46,11 +46,10 @@ public class HomePageTest extends Base{
 	
 	@Test(priority=3)
 	public void validateHomePageDropdownLinksWorksAsExpected() {
-		homepage.validateHomePageLinksDropdown();
+		homepage.validateHomePageLinksDropdown("ProductLink");
+		homepage.validateHomePageLinksDropdown("Developers");
+
 	}
-	
-	
-	
 	
 	@AfterMethod
 	public void exit() {

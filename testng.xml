@@ -11,7 +11,7 @@
     <classes>
       <class name="com.test.BS.smokeTest.HomePageTest">
       <methods>
-      	<exclude name="validateHeaderFunctionality"></exclude>
+      	<include name="validateHeaderFunctionality"></include>
       	<include name="validateHomePageLinksWorksAsExpected"></include>
       	<include name="validateHomePageDropdownLinksWorksAsExpected"></include>
       </methods>

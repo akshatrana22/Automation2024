@@ -5,15 +5,15 @@
     <listener class-name="com.test.BS.utility.AnnotationTransformer"/>
     <listener class-name="com.test.BS.utility.TestListener"/>
   </listeners>
-  <test thread-count="5" name="SnokeTest(failed)" verbose="3">
+  <test thread-count="5" name="HomePage Test(failed)" verbose="3">
     <classes>
       <class name="com.test.BS.smokeTest.HomePageTest">
         <methods>
-          <include name="validateHomePageDropdownLinksWorksAsExpected"/>
+          <include name="validateHeaderFunctionality"/>
           <include name="setUp"/>
           <include name="exit"/>
         </methods>
       </class> <!-- com.test.BS.smokeTest.HomePageTest -->
     </classes>
-  </test> <!-- SnokeTest(failed) -->
+  </test> <!-- HomePage Test(failed) -->
 </suite> <!-- Failed suite [BrowserStackSuite] -->
