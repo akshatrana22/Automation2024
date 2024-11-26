@@ -4,7 +4,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Iterator;
 import java.util.Properties;
+import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,13 +21,58 @@ import com.test.BS.utility.WebEventListner;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Base {
+public class Base extends SuperBase{
 	
 	public static WebDriver driver;
 	public static Properties prop;
 	public static Select select;
 	public static Actions action;
 	public static WebEventListner eventfiring;
+	
+	@Override
+	public String getTheTitleOfPage() {
+		// TODO Auto-generated method stub
+		return driver.getTitle();
+	}
+@Override
+public String getCurrentURLOfPage() {
+	// TODO Auto-generated method stub
+	return driver.getCurrentUrl();
+}
+@Override
+public void navigateTo(String Url) {
+	// TODO Auto-generated method stub
+	driver.navigate().to(Url);
+}
+@Override
+public void navigateBack() {
+	// TODO Auto-generated method stub
+	driver.navigate().back();
+}
+@Override
+public void navigateForward() {
+	// TODO Auto-generated method stub
+	driver.navigate().forward();
+}
+@Override
+public void switchToChild() {
+	// TODO Auto-generated method stub
+	Set<String>handles=driver.getWindowHandles();
+	Iterator<String> iterator=handles.iterator();
+	String parent= iterator.next();
+	String child=iterator.next();
+	driver.switchTo().window(child);
+}
+@Override
+public void switchToParent() {
+	// TODO Auto-generated method stub
+	Set<String>handles=driver.getWindowHandles();
+	Iterator<String> iterator=handles.iterator();
+	String parent= iterator.next();
+	String child=iterator.next();
+	driver.switchTo().window(child);
+	driver.switchTo().window(parent);
+}
 	
 	
 	public static void initialization() {
@@ -71,7 +118,6 @@ public class Base {
 	public static void quitBrowser() {
 		driver.quit();
 	}
-		
 	}
-	
+
 

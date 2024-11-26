@@ -3,7 +3,6 @@ package com.test.BS.smokeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import com.test.BS.Pages.HomePage;
 import com.test.BS.base.Base;
@@ -29,7 +28,7 @@ public class HomePageTest extends Base{
 		String actual= homepage.validateHeaderbarText();
 		softassert.assertEquals(actual, expected);
 		String Title="BrowserStack Low-Code Automation | BrowserStack";
-		softassert.assertEquals(Title, homepage.validateHeaderBarLinkFunctionlity() );
+		softassert.assertEquals(Title, homepage.validateHeaderBarLinkFunctionlity());
 		softassert.assertAll();
 	}
 	

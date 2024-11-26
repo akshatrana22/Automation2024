@@ -42,7 +42,6 @@ public void elementToBeVisible(WebElement element) {
 	
 	wait= new WebDriverWait(driver,Duration.ofSeconds(20));
 	wait.until(ExpectedConditions.visibilityOf(element));
-	
 }	
 
 }

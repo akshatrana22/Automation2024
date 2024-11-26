@@ -1,13 +1,10 @@
 package com.test.BS.Pages;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -60,14 +57,9 @@ public class HomePage extends Base{
 	
 	public String validateHeaderBarLinkFunctionlity() throws InterruptedException {
 		wait.elementToBeClickable(headerBarLink);
-		log.info("First log");
 		headerBarLink.click();
-		Set<String> handle=driver.getWindowHandles();
-		Iterator<String> i=handle.iterator();
-		String P=i.next();
-		String C=i.next();
-		driver.switchTo().window(C);
-		return(driver.getTitle());
+		switchToChild();
+		return(getTheTitleOfPage());
 
 	}
 	
@@ -118,7 +110,6 @@ public class HomePage extends Base{
 			Assert.assertEquals(expected, actual);
 
 			}
-			
 		}
 		
 		
