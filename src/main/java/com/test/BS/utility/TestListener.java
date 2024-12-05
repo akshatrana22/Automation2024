@@ -12,7 +12,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class TestListener extends Utility implements ITestListener{
+public class TestListener implements ITestListener{
 	public ExtentSparkReporter sparkreporter; //UI of report
 	public ExtentReports extent; //update information in the report
 	public ExtentTest test; //create  and update test case entries in the report
@@ -57,7 +57,7 @@ public class TestListener extends Utility implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		try {
-			takeScreenshotAtEndOfTest(result.getMethod().getMethodName());
+			Utility.takeScreenshotAtEndOfTest(result.getMethod().getMethodName());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

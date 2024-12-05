@@ -3,6 +3,10 @@ package com.test.BS.smokeTest;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeMethod;
+
+import java.util.List;
+
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import com.test.BS.Pages.HomePage;
 import com.test.BS.base.Base;
@@ -36,7 +40,8 @@ public class HomePageTest extends Base{
 	
 	public void validateHomePageLinksWorksAsExpected() {
 		try {
-			homepage.validateHomePageLinks();
+			List<String>ExpectedText=List.of("Products", "Developers", "Pricing", "Sign in", "FREE TRIAL");
+			Assert.assertTrue(homepage.getHomePageLinksText().equals(ExpectedText), "Elements found are different"); 
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -45,9 +50,13 @@ public class HomePageTest extends Base{
 	
 	@Test(priority=3)
 	public void validateHomePageDropdownLinksWorksAsExpected() {
-		homepage.validateHomePageLinksDropdown("ProductLink");
-		homepage.validateHomePageLinksDropdown("Developers");
-
+		List<String> actualProductLinkWeb = List.of("Live","Bug Capture","Accessibility Testing","Automate","Automate TurboScale","Accessibility Automation","Percy","Low Code Automation","Test Management","Test Observability");	
+		List<String> actualProductLinkApp = List.of("App Live","App Accessibility Testing","App Automate","App Percy","Test Management","Test Observability");
+		List<String> actualDevelopersLink = List.of("Documentation","Support","Status","Release Notes","Open Source","Events","Meetups","Test University Beta","Champions");
+		softassert.assertTrue( homepage.getHomePageLinksDropdownText("ProductLink","Web").equals(actualProductLinkWeb),"Incorrect values in the Product Link Web dropdown");
+		softassert.assertTrue( homepage.getHomePageLinksDropdownText("ProductLink","App").equals(actualProductLinkApp),"Incorrect values in the Product Link App dropdown");
+		softassert.assertTrue( homepage.getHomePageLinksDropdownText("Developers","Web").equals(actualDevelopersLink),"Incorrect values in the Developers Web dropdown");
+		softassert.assertAll();
 	}
 	
 	@AfterMethod

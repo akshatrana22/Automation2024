@@ -63,54 +63,44 @@ public class HomePage extends Base{
 
 	}
 	
-	public void validateHomePageLinks() throws InterruptedException {
-		Assert.assertEquals(productLink.getText(),"Products");
-		Assert.assertEquals(developersLink.getText(),"Developers");
-		Assert.assertEquals(pricing.getText(),"Pricing");
-		Assert.assertEquals(SignIn.getText(),"Sign in");
-		Assert.assertEquals(freeTrial.getText(),"FREE TRIAL");	
+	public List<String> getHomePageLinksText() throws InterruptedException {
+		List<String>HeaderLinks= List.of(productLink.getText(), developersLink.getText(), pricing.getText(), SignIn.getText(), freeTrial.getText());
+		return HeaderLinks;
 		}
 	
-	public void validateHomePageLinksDropdown(String dropdownName) {
+	public List<String> getHomePageLinksDropdownText(String dropdownName,String type) {
 		int i;
 		action= new Actions(driver);
-		if(dropdownName.equalsIgnoreCase("ProductLink")) {
+		if(dropdownName.equalsIgnoreCase("ProductLink")&&type.equals("Web")) {
 		action.moveToElement(productLink).build().perform();
 		//ProductWebList
 		List<String> expectedString= new ArrayList<>();
 		for(i=0;i<productsDropDownElements.size();i++) {	
 			expectedString.add(productsDropDownElements.get(i).getText());
 		}
-			List<String> actualStrings = List.of("Live","Bug Capture","Accessibility Testing","Automate","Automate TurboScale","Accessibility Automation", 
-				    "Percy", 
-				    "Low Code Automation", 
-				    "Test Management", 
-				    "Test Observability"
-				);		
-			Assert.assertEquals(expectedString, actualStrings);
-	
-	//ProductAppList
-	action.moveToElement(productAppLink).build().perform();
-	List<String>expectedAppList=new ArrayList<>();
-	for(i=0;i<productsAppDropDown.size();i++) {
-		expectedAppList.add(productsAppDropDown.get(i).getText());
-	}
-	List<String> actualAppStrings = List.of("App Live","App Accessibility Testing","App Automate","App Percy","Test Management","Test Observability");	
-	Assert.assertEquals(expectedAppList, actualAppStrings);
-	}
-		else if(dropdownName.equalsIgnoreCase("Developers")) {
+		return expectedString;
+		}
+		else if(dropdownName.equalsIgnoreCase("ProductLink")&&type.equals("App")) {
+			action.moveToElement(productLink).moveToElement(productAppLink).build().perform();
+			List<String>expectedAppList=new ArrayList<>();
+			for(i=0;i<productsAppDropDown.size();i++) {
+				expectedAppList.add(productsAppDropDown.get(i).getText());
+			}
+		return 	expectedAppList;
+		
+		}
+		else if(dropdownName.equalsIgnoreCase("Developers")&&type.equals("Web")) {
 			action.moveToElement(developersLink).build().perform();
 			List<String>expected=new ArrayList<>();
 			
 			for(i=0;i<developerDropDown.size();i++) {
 				expected.add(developerDropDown.get(i).getText());
 			}
-			
-			List<String> actual = List.of("Documentation","Support","Status","Release Notes","Open Source","Events","Meetups","Test University Beta","Champions");
-			Assert.assertEquals(expected, actual);
-
+			return 	expected;
 			}
-		}
-		
-		
+		else {
+	        throw new IllegalArgumentException("Invalid dropdown name or type");
+	    }
 	}
+	}
+		
